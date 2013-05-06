@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fourback"
+    tools:context=".Rewards" >
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/fourhomebutton" />
+
+    <TextView
+        android:id="@+id/totalpoints"
+        style="@style/AppBaseTheme"
+        android:layout_width="125dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/home"
+        android:layout_marginRight="255dp"
+        android:layout_marginTop="45dp"
+        android:layout_toLeftOf="@+id/home"
+        android:gravity="center"
+        android:textColor="@color/Blue"
+        android:textSize="@dimen/points_cum" />
+
+     <TextView
+         android:id="@+id/displaymessage"
+         style="@style/AppBaseTheme"
+         android:layout_width="330dp"
+         android:layout_height="100dp"
+         android:layout_alignRight="@+id/home"
+         android:layout_below="@+id/home"
+         android:gravity="center"
+         android:layout_marginRight="55dp"
+         android:layout_marginTop="15dp"
+         android:textColor="@color/viewfinder_laser"
+         android:textSize="@dimen/big_totalpoints" />
+
+     <TextView
+         android:id="@+id/currentpoints"
+         android:layout_width="400dp"
+         android:layout_height="100dp"
+         android:layout_alignParentLeft="true"
+         android:layout_centerVertical="true"
+         android:layout_marginLeft="150dp"
+          android:gravity="center"
+         android:textAppearance="?android:attr/textAppearanceLarge" />
+
+     <TextView
+         android:id="@+id/currentmessage"
+         android:layout_width="400dp"
+         android:layout_height="100dp"
+         android:layout_alignLeft="@+id/currentpoints"
+         android:layout_alignParentBottom="true"
+         android:layout_marginBottom="99dp"
+         android:gravity="center"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textSize="@dimen/big_totalpoints" />
+    	 
+    	      <TextView
+         android:id="@+id/expandedRewardsMessage"
+          android:layout_width="300dp"
+    	     android:layout_height="200dp"
+    	     android:layout_above="@+id/currentmessage"
+    	     android:layout_alignLeft="@+id/totalpoints"
+    	     android:layout_below="@+id/displaymessage" 
+    	      android:layout_alignRight="@+id/displaymessage"
+    	     android:gravity="center"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textSize="@dimen/big_totalpoints" />
+
+    	      <ScrollView
+    	          android:id="@+id/ListViewForPoints"
+    	          style="@style/AppBaseTheme"
+    	          android:layout_width="480dp"
+    	          android:layout_height="490dp"
+    	        
+    	          android:layout_alignTop="@+id/displaymessage" >
+
+    	          <LinearLayout
+    	              android:id="@+id/LinearLayoutForPoints"
+    	              android:layout_width="match_parent"
+    	              android:layout_height="wrap_content"
+    	              android:orientation="vertical" >
+    	          </LinearLayout>
+    	      </ScrollView>
+
+</RelativeLayout>
