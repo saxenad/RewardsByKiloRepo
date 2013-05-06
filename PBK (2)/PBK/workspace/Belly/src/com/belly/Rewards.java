@@ -129,7 +129,7 @@ public class Rewards extends Activity {
 		
 		protected BitmapDrawable doInBackground(TextView... args) {
 			rewards_local=args[0];
-			return GloballyUsedFunctions.writeOnDrawable(resourcesInstance, R.drawable.footer, "hiThere");
+			return GloballyUsedFunctions.writeOnDrawable(resourcesInstance, R.drawable.footer, "hiThereFromDhruvSaxena18");
 		}
 		
 		protected void onPostExecute(BitmapDrawable result) {
